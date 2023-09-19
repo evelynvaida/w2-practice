@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color:#FFEEDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+button {
+    background-color: #1C5A4E;
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+    color: #FFEEDF;
+    font-size: 200px;
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    height: 270px;
+}
