@@ -21,13 +21,13 @@ logger('szia') */
 logger (sumTwoNumbers(5, 10)) */
 
 function calculateAge(birthYear, currentYear) {
-    var age = (currentYear - birthYear)-1;
-
-    return age
+    let age = 0;
+    age = (currentYear - birthYear)-1;
+    return age;
 }
 
-function yourAge (text) {
-    console.log("You are " + text + " years old")
+function yourAge(text) {
+    console.log(`You are ${text} years old`);
 }
 
-yourAge (calculateAge(1993,2023))
+yourAge(calculateAge(1993,2023));
