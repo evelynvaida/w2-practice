@@ -1,33 +1,93 @@
-/* function logger(text) {
-    console.log(text)
-} */
+/* let stringVariable = "text";
+let numberVariable = 15;
+let booleanVariable = true;
 
-/* logger('hello')
-logger('szia') */
-
-/* function logTheSumTwoNumbers(a, b) {
-    console.log(a + b);
-} */
-
-/* logTheSumTwoNumbers(5, 10) */
-
-/* function sumTwoNumbers(a, b) {
-    let sum = 0;
-    sum = a + b;
-
-    return sum;
+function myFunc(param1, param2) {
+    return param1 + param2
 }
 
-logger (sumTwoNumbers(5, 10)) */
+console.log(stringVariable);
+console.log(numberVariable, stringVariable); */
 
-function calculateAge(birthYear, currentYear) {
-    let age = 0;
-    age = (currentYear - birthYear)-1;
-    return age;
+/* let array = ["alma", 12, false, undefined, null]
+
+console.log(array)
+
+let stringArray = ["alma", "korte", "barack"];
+
+console.log(stringArray[4]); */
+/* 
+let myObj = {
+    key1: "value1",
+    key2: "value2",
+    Key4: 15,
+    key6: true,
+    key7: ["alma", "korte", "barack"]
 }
 
-function yourAge(text) {
-    console.log(`You are ${text} years old`);
+console.log(myObj.key7[1]); */
+
+/* let myFacebook = {
+    name: "Evelyn Vaida",
+    age: 28,
+    location: "Kolozsvar",
+    friends: [
+        "pelda peter",
+        "pelda peter2"
+    ],
+    movies: [
+        {
+            title: "Harry Potter",
+            year: 2001,
+            casts: [
+                "Harry Potter",
+                "Hadvig"
+            ]
+        }, {
+            title: "Ananasz Express",
+            year: 2010,
+        }
+    ]
 }
 
-yourAge(calculateAge(1993,2023));
+console.log(myFacebook.movies[0].casts[1])
+
+let myArr = [
+    ["alma", "korte"],
+    ["szentkiralyi", "tesco gazd"]
+]
+
+console.log(myArr[1][0]) */
+
+function negativeOrPositive(number) {
+    if (number < 0) {
+        return "negative"
+    } else if (number > 0) {
+        return "positive"
+    } else {
+        return "zero"
+    }
+}
+
+function logger(text) {
+    console.log(text);
+}
+
+// logger(negativeOrPositive(0))
+
+function decideIfBeerIsGood(beer) {
+    /* beer = {name: "Dreher", price: 349, abv: 5} */      /* &&=AND , ||=OR */
+    if(beer.price < 340 && beer.abv > 4.7) {
+        return true
+    } else {
+        return false
+    }
+}
+
+let dreher = {name: "Dreher", price: 349, abv: 5}
+let sporoni = {name: "Soproni", price:329, abv: 4.5}
+let borsodi = {name: "Borsodi", price:339, abv: 4.8}
+
+logger(decideIfBeerIsGood(dreher))
+logger(decideIfBeerIsGood(sporoni))
+logger(decideIfBeerIsGood(borsodi))
