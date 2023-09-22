@@ -2,8 +2,31 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: #504236;
+#root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-self: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.country {
+  width: 300px;
+  min-height: 150px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.country h2 {
+  min-height: 80px;
+  text-align: center;
+}
+
+.country p {
+  text-align: center;
 }
