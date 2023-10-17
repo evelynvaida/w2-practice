@@ -11,53 +11,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.wrapper {
-  margin-top: 60px;
-  text-align: center;
-}
-.wrapper h1 {
-  font-family: 'Yatra One', cursive;
-  font-size: 48px;
-  color: #fff;
-  margin-bottom: 25px;
-}
 
-.our_team {
-  width: 1000px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  perspective: 800px;
-}
-
-.our_team:hover > .team_member {
+.card:hover {
   cursor: pointer;
   transform: rotateY(180deg);
 }
 
-.team_member {
-  height: 250px;
-  width: 250px;
-  padding: 20px 10px;
+.card {
+  height: 350px;
+  width: 500px;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
 }
 
-.front_side, .back_side {
-  height: 500px;
-  width: 250px;
+.front,
+.back {
+  height: 100%;
+  width: 100%;
   border-radius: 2rem;
   box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
   position: absolute;
   backface-visibility: hidden;
-
 }
 
-.back_side {
-  background-color: aquamarine;
+.back {
+  background-color: #3a3a3a;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -65,6 +47,7 @@ body {
   align-items: center;
   gap: 5rem;
 }
+
 
 .wrapper .our_team .team_member .member_img {
   background: #e9e5fa;
@@ -77,10 +60,10 @@ body {
   cursor: pointer;
   position: relative;
 }
-
 .wrapper .our_team .team_member .member_img img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 .wrapper .our_team .team_member h3 {
